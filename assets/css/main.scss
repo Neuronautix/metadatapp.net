@@ -7,3 +7,18 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Add alternating background colors for sections */
+.block:nth-child(odd) {
+    background-color: #f8d7da; /* Light Pink */
+}
+
+.block:nth-child(even) {
+    background-color: #d6eaf8; /* Light Blue */
+}
+
+.block {
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px; /* Slight rounded corners */
+}
