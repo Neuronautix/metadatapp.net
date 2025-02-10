@@ -113,27 +113,24 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "MetaDatApp.net"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "You're **All-In-One** Metadatapp Management App"
+  location         : "Montpellier, France"
+  email            : "contact@metadatapp.net"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:contact@metadatapp.net"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: "BlueSky"
+      icon: "fab fa-fw fa-bluesky-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/neuronautix/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -141,11 +138,8 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    - label: "BlueSky"
+      icon: "fab fa-fw fa-bluesky-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
