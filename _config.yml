@@ -19,14 +19,14 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "MetaDatApp"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "MetaDatApp.net"
-description              : "You're All-In-One Metadatapp Management platform"
+subtitle                 : "You're All-In-One Metadatapp Management platform" # site tagline that appears below site title in masthead
+name                     : "MetaDatApp"
+description              : "A Metadata Management platform for preclinical research"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/Logo2.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -40,7 +40,6 @@ comments:
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
@@ -90,7 +89,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : dhuzard
 facebook:
   username               :
   app_id                 :
@@ -114,25 +113,25 @@ analytics:
 # Site Author
 author:
   name             : "MetaDatApp.net"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "You're **All-In-One** Metadatapp Management App"
+  # avatar           : "/assets/images/dhuzard_profile_2025.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Easy metadata mandling for preclinical research"
   location         : "Montpellier, France"
-  email            : "contact@metadatapp.net"
+  # email            : "damien.huzard@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:contact@metadatapp.net"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://neuronautix.com"
     - label: "BlueSky"
       icon: "fab fa-fw fa-bluesky-square"
-      # url: "https://twitter.com/"
+      url: "https://bsky.app/profile/dhuzard.bsky.social"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/neuronautix/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    # - label: "Instagram"
+      # icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
@@ -140,19 +139,19 @@ footer:
   links:
     - label: "BlueSky"
       icon: "fab fa-fw fa-bluesky-square"
-      # url:
+      url: https://bsky.app/profile/dhuzard.bsky.social
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: https://github.com/neuronautix/
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   # url:
+    # - label: "Bitbucket"
+    #   icon: "fab fa-fw fa-bitbucket"
+    #   # url:
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   # url:
 
 
 # Reading Files
