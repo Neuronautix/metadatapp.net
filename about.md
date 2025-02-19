@@ -11,5 +11,5 @@ author_profile: true
 
 We are focused on improving the way metadata are tracked in behavioral and preclinical research.
 
-More datails coming soon !
+More details coming soon !
 But an initial overview is visible [HERE](/#the-team)
