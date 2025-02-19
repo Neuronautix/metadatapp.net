@@ -7,13 +7,14 @@ permalink: /
 author_profile: true
 ---
 
-# MetaDatApp
+<!-- # MetaDatApp -->
 
-## Your All-in-one Metadata Management Solution
+## Your All-in-one Metadata Management Platform
 
 Elevate Your Preclinical Research with MetaDatApp: Our solution helps you to **Streamline** your data management, enhance **transparency**, and ensure your research practices align with the **highest ethical standards** and the **FAIR framework**.
 
 [What is Metadatapp ?](#what-is-metadatapp)
+[Who are we?](#the-team)
 
 ---
 
@@ -32,8 +33,8 @@ At MetaDatApp, we empower researchers with tools to simplify data workflows, ens
 {: .block}
 
 ### Science-Crafted Management
-- Developed by scientists for scientists.
-- Intuitive database system eliminating redundant data entry.
+- Developed by **scientists for scientists**.
+- Intuitive database system **eliminating redundant data entry**.
 - **User-Centric Design:** Built with firsthand research experience.
 - **Time Efficiency:** No duplicate data entry—save time and focus on research.
 - **Seamless Integration:** Connects with third-party lab applications.
@@ -68,6 +69,7 @@ At MetaDatApp, we empower researchers with tools to simplify data workflows, ens
 
 ### Enhance Research Quality
 - **Improve Data Integrity:** Ensure accurate and reliable data.
+- **FAIR** data export.
 - **Facilitate Accurate Interpretation:** Simplify data analysis.
 - **Evidence-Based Conclusions:** Build confidence in scientific outcomes.
 
