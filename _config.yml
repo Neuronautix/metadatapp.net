@@ -19,14 +19,14 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "MetaDatApp"
 title_separator          : "-"
-subtitle                 : "You're All-In-One Metadatapp Management platform" # site tagline that appears below site title in masthead
+subtitle                 : "You're all-in-one Metadata management platform" # site tagline that appears below site title in masthead
 name                     : "MetaDatApp"
 description              : "A Metadata Management platform for preclinical research"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/Logo2.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/Logo2_thin_white_-removebg.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -114,7 +114,7 @@ analytics:
 author:
   name             : "MetaDatApp.net"
   # avatar           : "/assets/images/dhuzard_profile_2025.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Easy metadata mandling for preclinical research"
+  bio              : "A Metadata Management platform for preclinical research"
   location         : "Montpellier, France"
   # email            : "damien.huzard@gmail.com"
   links:

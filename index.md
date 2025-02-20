@@ -86,27 +86,41 @@ Our goal is to empower researchers with tools to simplify research workflows, en
 ## The Team
 {: .block}
 
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div style="margin-right: 20px;">
+        <img src="assets/images/dhuzard_profile_2025_small-removebg-preview.png" alt="Damien Huzard" />
+    </div>
+    <div style="text-align: center;">
+        <a href="https://neuronautix.com" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(244, 202, 240); text-align: center; border-radius: 5px; text-decoration: none;">NeuroNautix</a>
+        <br>
+        <br>
+        <a href="https://dhuzard.github.io" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none; margin-bottom: 10px;">Personal Website</a> 
+        <br>
+        <br>
+        <a href="https://www.linkedin.com/in/dhuzard/" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(244, 202, 240); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
+    </div>
+</div>
+
 ### **Damien Huzard, PhD** - Co-founder & CSO
-After 10 years in preclinical academic research focusing on **behavioral neuroscience** and **data analysis**, Damien decided to contribute to science from the outside! His work in the **behavioral community** led him to envision the system he wished had existed earlier. He is also the moderator and voice of *The Behaviour Forum*.
+With a decade of experience in **preclinical academic research** specializing in **behavioral neuroscience** and **data analysis**, Damien transitioned to making an impact on science from an external perspective. His involvement in the behavioral community inspired him to create a system he wished had been available earlier. Additionally, he serves as an administrator, moderator and voice of [The Behaviour Forum](www.thebehaviourforum.org).
 
-<p style="text-align: center;">
-  <a href="https://neuronautix.com" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(244, 202, 240); text-align: center; border-radius: 5px; text-decoration: none;">NeuroNautix</a>
-</p> 
+---
 
-<p style="text-align: center;">
-  <a href="https://dhuzard.github.io" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">Personal Website</a>
-</p> 
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div style="margin-right: 20px;">
+        <img src="assets/images/Laurent_Huzard-removebg-preview.png" alt="Laurent Huzard, Senior Backend developer" />
+    </div>
+    <div style="text-align: center;">
+        <a href="https://www.linkedin.com/in/laurent-huzard-84569939/" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
+    </div>
+</div>
 
-<p style="text-align: center;">
-  <a href="https://www.linkedin.com/in/dhuzard/" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(244, 202, 240); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
-</p> 
 
 ### **Laurent Huzard** - Co-founder & CTO
-Senior Backend developer, all-star debugger. Laurent is the core and backbone of the project! With a strong background in PHP, he understands how structured and effecient frameworks facilitates and strenghten the code architecture.
+**Team Description:**
+Laurent, our Senior Backend Developer, is an exceptional debugger and the backbone of our project. With a strong background in PHP, he excels at utilizing structured and efficient frameworks to enhance and strengthen our code architecture. His expertise is instrumental in driving our project’s success!
 
-<p style="text-align: center;">
-  <a href="https://www.linkedin.com/in/laurent-huzard-84569939/" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
-</p> 
+---
 
 ### **J.D** - Fullstack developer
 
