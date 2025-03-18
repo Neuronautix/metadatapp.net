@@ -1,7 +1,5 @@
 ---
 layout: single
-classes:
-  - landing
 permalink: /about/
 # classes: wide
 author_profile: true

@@ -16,15 +16,15 @@ Elevate Your Preclinical Research with MetaDatApp: Our platform helps you to **S
 <!-- <p style="text-align: center;">[What is Metadatapp ?](#what-is-metadatapp)</p>  
 
 <p style="text-align: center;">
-  <a href="#what-is-metadatapp">What is Metadatapp ?</a>
+  <a href="#what-is-metadatapp">Learn more about Metadatapp ?</a>
 </p>   -->
 
 <p style="text-align: center;">
-  <a href="#what-is-metadatapp" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">What is Metadatapp ?</a>
+  <a href="#what-is-metadatapp" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">Learn more about Metadatapp</a>
 </p> 
 
 <p style="text-align: center;">
-  <a href="#the-team" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(244, 202, 240); text-align: center; border-radius: 5px; text-decoration: none;">Who are we?</a>
+  <a href="#the-team" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(248, 215, 218); text-align: center; border-radius: 5px; text-decoration: none;">Who are we ?</a>
 </p> 
 
 ---
@@ -37,11 +37,11 @@ Elevate Your Preclinical Research with MetaDatApp: Our platform helps you to **S
 Our goal is to empower researchers with tools to simplify research workflows, ensure FAIR compliance, and enhance reproducibility in science. Together, we make research more efficient and impactful.
 
 <p style="text-align: center;">
-  <a href="https://en.wikipedia.org/wiki/Metadata" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(244, 202, 240); text-align: center; border-radius: 5px; text-decoration: none;">What is metadata ?</a>
+  <a href="https://en.wikipedia.org/wiki/Metadata" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(248, 215, 218); text-align: center; border-radius: 5px; text-decoration: none;">What is metadata ?</a>
 </p> 
 
 <p style="text-align: center;">
-  <a href="#discover-how-metadatapp-transforms-metadata-management" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">Learn More about MetaDatApp</a>
+  <a href="#discover-how-metadatapp-transforms-metadata-management" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">Learn More about MetaDatApp</a>
 </p> 
 
 
@@ -91,13 +91,13 @@ Our goal is to empower researchers with tools to simplify research workflows, en
         <img src="assets/images/dhuzard_profile_2025_small-removebg-preview.png" alt="Damien Huzard" />
     </div>
     <div style="text-align: center;">
-        <a href="https://neuronautix.com" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(244, 202, 240); text-align: center; border-radius: 5px; text-decoration: none;">NeuroNautix</a>
+        <a href="https://neuronautix.com" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(248, 215, 218); text-align: center; border-radius: 5px; text-decoration: none;">NeuroNautix</a>
         <br>
         <br>
-        <a href="https://dhuzard.github.io" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none; margin-bottom: 10px;">Personal Website</a> 
+        <a href="https://dhuzard.github.io" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none; margin-bottom: 10px;">Personal Website</a> 
         <br>
         <br>
-        <a href="https://www.linkedin.com/in/dhuzard/" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(244, 202, 240); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/dhuzard/" style="display: inline-block; padding: 10px 20px; background-color:rgb(8, 8, 8); color: rgb(248, 215, 218); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
     </div>
 </div>
 
@@ -111,18 +111,17 @@ With a decade of experience in **preclinical academic research** specializing in
         <img src="assets/images/Laurent_Huzard-removebg-preview.png" alt="Laurent Huzard, Senior Backend developer" />
     </div>
     <div style="text-align: center;">
-        <a href="https://www.linkedin.com/in/laurent-huzard-84569939/" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/laurent-huzard-84569939/" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
     </div>
 </div>
 
 
 ### **Laurent Huzard** - Co-founder & CTO
-**Team Description:**
-Laurent, our Senior Backend Developer, is an exceptional debugger and the backbone of our project. With a strong background in PHP, he excels at utilizing structured and efficient frameworks to enhance and strengthen our code architecture. His expertise is instrumental in driving our project’s success!
+Laurent, our Senior Backend Developer, is an exceptional debugger and the backbone of our project. With a strong background in PHP (Symfony and API platform), he excels at utilizing structured and efficient frameworks to enhance and strengthen our code architecture. His expertise is instrumental in driving our project’s success!
 
----
+<!-- ---
 
-### **J.D** - Fullstack developer
+### **Johann Delebarre** - Fullstack developer -->
 
 ---
 
@@ -149,7 +148,7 @@ Laurent, our Senior Backend Developer, is an exceptional debugger and the backbo
 **Have questions or want a demo?** Get in touch today!
 
 <p style="text-align: center;">
-  <a href="contact@metadatapp.net" style="display: inline-block; padding: 10px 20px; background-color:rgb(244, 202, 240); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">📧 Email Us Now </a>
+  <a href="contact@metadatapp.net" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">📧 Email Us Now </a>
 </p> 
 
 ---
