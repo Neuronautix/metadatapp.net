@@ -101,8 +101,8 @@ Our goal is to empower researchers with tools to simplify research workflows, en
     </div>
 </div>
 
-### **Damien Huzard, PhD** - Co-founder & CSO
-With a decade of experience in **preclinical academic research** specializing in **behavioral neuroscience** and **data analysis**, Damien transitioned to making an impact on science from an external perspective. His involvement in the behavioral community inspired him to create a system he wished had been available earlier. Additionally, he serves as an administrator, moderator and voice of [The Behaviour Forum](www.thebehaviourforum.org).
+### **Damien Huzard, PhD** - Founder & CSO
+With 15 years of experience in **preclinical academic research** and specializing in **behavioral neuroscience** and **data analysis**, Damien transitioned to making an impact on science from an external perspective. His involvement in the behavioral community and his interest in creating customized solutions inspired him to create [NeuroNautix](www.neuronautix.com) to share his behavioral expertise and MetaDatApp to improve metadata management in research. Additionally, he serves as an administrator, moderator and voice of [The Behaviour Forum](www.thebehaviourforum.org).
 
 ---
 
@@ -116,8 +116,30 @@ With a decade of experience in **preclinical academic research** specializing in
 </div>
 
 
-### **Laurent Huzard** - Co-founder & CTO
-Laurent, our Senior Backend Developer, is an exceptional debugger and the backbone of our project. With a strong background in PHP (Symfony and API platform), he excels at utilizing structured and efficient frameworks to enhance and strengthen our code architecture. His expertise is instrumental in driving our project’s success!
+### **Laurent Huzard** - CTO
+Laurent, our Backend Developer, is an exceptional debugger and the backbone of our project. With a strong background in PHP (Symfony and API platform), he excels at utilizing structured and efficient frameworks to enhance and strengthen our code architecture. His expertise is instrumental in driving our project’s success!
+
+---
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div style="margin-right: 20px;">
+        <img src="assets/images/1200px-Uncle_Sam_(pointing_finger).png" alt="Laurent Huzard, Senior Backend developer" />
+    </div>
+    <div style="text-align: center;">
+        <a href="damien.huzard@gmail.com" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">📧Contact Damien📧</a>
+    </div>
+</div>
+
+
+### **You ?!** - Co-founder
+I'm currently looking for a co-founder to join the adventure! 
+Do you have:
+- a technical background (extensive knowledge in Symfony is required!).
+- some startup experience in SaaS
+- a part-time job on the side
+- Appetance for better science 
+- Curiosity for semantic web and data standards
+Then, Drop me an email and let's chat !
 
 <!-- ---
 
