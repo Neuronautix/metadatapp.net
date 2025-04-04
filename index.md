@@ -123,7 +123,7 @@ Laurent, our Backend Developer, is an exceptional debugger and the backbone of o
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <div style="margin-right: 20px;">
-        <img src="assets/images/1200px-Uncle_Sam_(pointing_finger).png" alt="Laurent Huzard, Senior Backend developer" />
+        <img src="assets/images/1200px-Uncle_Sam_(pointing_finger).png" alt="looking for a co-founder" width="250" />
     </div>
     <div style="text-align: center;">
         <a href="damien.huzard@gmail.com" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">📧Contact Damien📧</a>
