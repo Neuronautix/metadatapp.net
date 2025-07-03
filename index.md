@@ -166,14 +166,19 @@ Serge and Damien already collaborated on the [Mouse Behavior Ontology](https://o
 <div style="text-align: center;">
         <a href="https://www.linkedin.com/in/serge-sonfack-29873250/" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
 </div>
+<br>
 <div style="text-align: center;">
         <a href="https://orcid.org/0000-0002-6085-6818/" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">ORCID</a>
 </div>
 
+---
+## Our Academic Partners
+{: .block}
 
+### **Coming soon**
+We are actively working on finding the perfect academic partner in order to propel our ideas into something truly unique! bringing new knowledge to our scientific community!
 
 ---
-
 
 ## Our external supports and collaborators
 {: .block}
