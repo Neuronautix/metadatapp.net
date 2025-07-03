@@ -132,7 +132,7 @@ With 15 years of experience in **preclinical academic research** and specializin
 
 
 ### **Laurent Huzard** - The Backbone
-Laurent, our Backend Developer, is an exceptional debugger and the backbone of our project. With a strong background in PHP (Symfony and API platform), he excels at utilizing structured and efficient frameworks to enhance and strengthen our code architecture. His expertise is instrumental in driving our project’s success!
+Laurent, our Lead Backend Developer, is an exceptional debugger and the backbone of our project. With a strong background in PHP (Symfony and API platform), he excels at utilizing structured and efficient frameworks to enhance and strengthen our code architecture. His expertise is instrumental in driving our project’s success!
 
 ---
 
@@ -156,6 +156,31 @@ Do you have:
 Then, Drop me an email and let's chat !
 
 ---
+
+## The Board of Advisors and Experts
+{: .block}
+
+### **Serge Sonfack, PhD** - Web Semantics, knowledge graphs and Ontologies
+Serge SONFACK is a free and open-source advocate and an AI researcher in knowledge representation (Uncertainty, Logic, Graph, Semantic Web) and reasoning. His current research topics are Activity Knowledge Management (AKM), Human-Machine Collaborative Intelligence, and Dynamic Knowledge Graphs (DKG).
+Serge and Damien already collaborated on the [Mouse Behavior Ontology](https://osf.io/s8kr9/). 
+<div style="text-align: center;">
+        <a href="https://www.linkedin.com/in/serge-sonfack-29873250/" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
+    </div>
+
+
+---
+
+
+## Our external supports and collaborators
+{: .block}
+
+This project would not be possible without the tremendous and generous help from passionated and kind individuals which helped frame and initiate this adventure in the correct path!
+<!-- Nico Carpi
+Esther NC3R
+Anastassia FC3R
+Kelly Softmouse -->
+---
+
 
 ## Q & A
 {: .block}
