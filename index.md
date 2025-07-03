@@ -165,7 +165,11 @@ Serge SONFACK is a free and open-source advocate and an AI researcher in knowled
 Serge and Damien already collaborated on the [Mouse Behavior Ontology](https://osf.io/s8kr9/). 
 <div style="text-align: center;">
         <a href="https://www.linkedin.com/in/serge-sonfack-29873250/" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">LinkedIn</a>
-    </div>
+</div>
+<div style="text-align: center;">
+        <a href="https://orcid.org/0000-0002-6085-6818/" style="display: inline-block; padding: 10px 20px; background-color:rgb(248, 215, 218); color: rgb(8, 8, 8); text-align: center; border-radius: 5px; text-decoration: none;">ORCID</a>
+</div>
+
 
 
 ---
