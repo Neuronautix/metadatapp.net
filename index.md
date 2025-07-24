@@ -131,9 +131,8 @@ With 15 years of experience in **preclinical academic research** and specializin
 </div>
 
 
-### **Laurent Huzard** - The Backbone
-Laurent, our Lead Backend Developer, is an exceptional debugger and the backbone of our project. With a strong background in PHP (Symfony and API platform), he excels at utilizing structured and efficient frameworks to enhance and strengthen our code architecture. His expertise is instrumental in driving our project’s success!
-
+### **Laurent Huzard** - Open Source Backbone
+Laurent is our open‑source contributor specializing in PHP (Symfony & API Platform). He’s the go‑to debugger in our community, meticulously reviewing pull requests, hardening code architecture and crafting reusable modules. His structured, framework‑driven approach keeps our projects solid, performant and scalable—driving adoption and helping fellow developers build with confidence.
 ---
 
 <div style="display: flex; justify-content: center; align-items: center;">
