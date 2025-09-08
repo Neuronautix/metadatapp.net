@@ -1,16 +1,9 @@
-# main links
-main:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-  - title: "Contact"
-    url: /contact/
-  - title: Demo
-    url: /demo/
+ # main links
+ - title: "Home"
+   url: /
+ - title: "About"
+   url: /about/
+ - title: "Contact"
+   url: /contact/
+ # - title: "Demo"
+ #   url: /demo/
