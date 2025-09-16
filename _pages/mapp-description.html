@@ -87,51 +87,6 @@ permalink: /mapp-description/
     <section id="architecture" class="section">
         <h2>Architecture at a glance</h2>
         <p>This Mermaid diagram summarizes the backend–frontend structure and data flow. Adapt labels to your exact stack.</p>
-        <div class="diagram">
-            <pre class="mermaid">
-flowchart LR
-  subgraph "Client[Front‑end (React Admin / MUI)]"
-    UI[Smart Forms<br/>(validators, date pickers, vocabularies)]
-    Dash[Dashboards<br/>(Projects, Studies, Datasets)]
-  end
-
-  subgraph "API[Backend (Symfony / API Platform)]"
-    Auth[Keycloak / OIDC]
-    REST[REST & GraphQL<br/>(JSON‑LD / Hydra)]
-    SHACL[Validation<br/>(SHACL shapes)]
-    Export[Export Engine<br/>(CSV, JSON, JSON‑LD, NWB)]
-  end
-
-  subgraph "Data[Storage & Services]"
-    DB[(PostgreSQL)]
-    Obj[(Object Storage / S3)]
-    KG[(Knowledge Graph / JSON‑LD contexts)]
-  end
-
-  subgraph "HCM[HCM & Instruments]"
-    DVC[DVC / Tecniplast]
-    LMT[Live Mouse Tracker]
-    IoT[Other Sensors / iMouse]
-  end
-
-  UI -- CRUD --> REST
-  Dash -- Query --> REST
-
-  REST -- Validate --> SHACL
-  REST -- Authz --> Auth
-  REST -- Persist --> DB
-  REST -- Files --> Obj
-  REST -- Linkage --> KG
-
-  HCM -- Ingest (adapters) --> REST
-  Export -- Reads --> DB
-  Export -- Generates --> Obj
-
-  classDef node fill:#111a2b,stroke:#334155,color:#e5e7eb;
-  classDef hot fill:#132a3e,stroke:#60a5fa,color:#e5e7eb;
-  class UI,Dash,REST,Export hot;
-            </pre>
-        </div>
 
         <div class="section" style="padding-top:18px;">
             <h3 style="margin-bottom:10px;">Data lifecycle</h3>
