@@ -1,0 +1,182 @@
+---
+layout: single
+title: "MAPP Description"
+permalink: /mapp-description/
+---
+
+<div class="container">
+    <section class="hero">
+        <div class="glass" style="padding:28px;">
+            <h1>FAIR‑by‑design metadata for preclinical research — API‑first, reproducible, and HCM‑ready.</h1>
+            <p>MAPP unifies experimental metadata, home‑cage monitoring outputs, and ontology‑driven schemas into one elegant platform. Connect your devices, structure your studies, and export to CSV/JSON/NWB without tears.</p>
+            <div class="badges">
+                <div class="badge"><i class="ri-code-s-slash-line"></i> API‑first (JSON‑LD)</div>
+                <div class="badge"><i class="ri-lock-2-line"></i> Role‑based access</div>
+                <div class="badge"><i class="ri-share-forward-line"></i> FAIR & 3Rs aligned</div>
+                <div class="badge"><i class="ri-git-branch-line"></i> Git‑ops friendly</div>
+            </div>
+            <div class="cta">
+                <a class="btn primary" href="#features"><i class="ri-sparkling-2-line"></i> Explore features</a>
+                <a class="btn" href="#architecture"><i class="ri-node-tree"></i> See the architecture</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <h2>Core features</h2>
+        <div class="grid">
+            <article class="card">
+                <h3><i class="icon ri-organization-chart"></i> Ontology‑driven metadata</h3>
+                <p>Capture experiments with validated schemas (JSON‑LD + SHACL). Align with Mouse Behavior Ontology (MBO), SEND‑JSON, and lab SOPs for semantic consistency.</p>
+            </article>
+            <article class="card">
+                <h3><i class="icon ri-cpu-line"></i> HCM integration</h3>
+                <p>Plug in DVC, LMT, iMouse and other systems. Normalize outputs into comparable behavioral metrics with provenance and versioning.</p>
+            </article>
+            <article class="card">
+                <h3><i class="icon ri-braces-line"></i> API Platform backend</h3>
+                <p>Symfony/API Platform with GraphQL & REST. Auth via Keycloak (OIDC). Postgres storage. Exports to CSV, JSON, JSON‑LD, and NWB.</p>
+            </article>
+            <article class="card">
+                <h3><i class="icon ri-layout-6-line"></i> React admin UI</h3>
+                <p>Fast data entry with smart forms: required fields, controlled vocabularies, date pickers, and data validators.</p>
+            </article>
+            <article class="card">
+                <h3><i class="icon ri-robot-2-line"></i> ML‑ready data</h3>
+                <p>Clean, structured datasets with clear labels and metadata context for downstream analytics, anomaly detection, and model training.</p>
+            </article>
+            <article class="card">
+                <h3><i class="icon ri-history-line"></i> Reproducibility by default</h3>
+                <p>Version control, data lineage, and export recipes ensure the same analysis yields the same results across labs and time.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Who benefits?</h2>
+        <div class="tabs" id="audience-tabs">
+            <div class="tab active" data-tab="platform">Platform</div>
+            <div class="tab" data-tab="labs">For Labs</div>
+            <div class="tab" data-tab="cros">For CROs</div>
+        </div>
+        <div class="tab-panels">
+            <div id="panel-platform" class="active">
+                <div class="grid">
+                    <article class="card"><h3><i class="icon ri-link"></i> Interoperable</h3><p>JSON‑LD contexts make your data linkable across systems and knowledge graphs.</p></article>
+                    <article class="card"><h3><i class="icon ri-shield-check-line"></i> Governed</h3><p>RBAC, audit logs, and dataset licensing to control who sees what and when.</p></article>
+                    <article class="card"><h3><i class="icon ri-external-link-line"></i> Exports</h3><p>One‑click export presets to CSV, JSON, JSON‑LD, and NWB with unit handling.</p></article>
+                </div>
+            </div>
+            <div id="panel-labs">
+                <div class="grid">
+                    <article class="card"><h3><i class="icon ri-flask-line"></i> Faster studies</h3><p>Templates for common protocols; reduce paperwork, reduce errors.</p></article>
+                    <article class="card"><h3><i class="icon ri-group-line"></i> Collaboration</h3><p>Share structured datasets with collaborators without emailing spreadsheets.</p></article>
+                    <article class="card"><h3><i class="icon ri-emotion-happy-line"></i> Animal welfare</h3><p>Traceability of housing, procedures, and endpoints supports 3Rs compliance.</p></article>
+                </div>
+            </div>
+            <div id="panel-cros">
+                <div class="grid">
+                    <article class="card"><h3><i class="icon ri-hand-coin-line"></i> Operational efficiency</h3><p>Standardized intake + outputs; fewer bespoke pipelines per client.</p></article>
+                    <article class="card"><h3><i class="icon ri-stack-line"></i> Productized data</h3><p>Offer reproducible data packages with provenance; accelerate client decisions.</p></article>
+                    <article class="card"><h3><i class="icon ri-customer-service-2-line"></i> SLAs you can defend</h3><p>Clear versioning and audit logs back your quality claims during audits.</p></article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture" class="section">
+        <h2>Architecture at a glance</h2>
+        <p>This Mermaid diagram summarizes the backend–frontend structure and data flow. Adapt labels to your exact stack.</p>
+        <div class="diagram">
+            <pre class="mermaid">
+flowchart LR
+  subgraph "Client[Front‑end (React Admin / MUI)]"
+    UI[Smart Forms<br/>(validators, date pickers, vocabularies)]
+    Dash[Dashboards<br/>(Projects, Studies, Datasets)]
+  end
+
+  subgraph "API[Backend (Symfony / API Platform)]"
+    Auth[Keycloak / OIDC]
+    REST[REST & GraphQL<br/>(JSON‑LD / Hydra)]
+    SHACL[Validation<br/>(SHACL shapes)]
+    Export[Export Engine<br/>(CSV, JSON, JSON‑LD, NWB)]
+  end
+
+  subgraph "Data[Storage & Services]"
+    DB[(PostgreSQL)]
+    Obj[(Object Storage / S3)]
+    KG[(Knowledge Graph / JSON‑LD contexts)]
+  end
+
+  subgraph "HCM[HCM & Instruments]"
+    DVC[DVC / Tecniplast]
+    LMT[Live Mouse Tracker]
+    IoT[Other Sensors / iMouse]
+  end
+
+  UI -- CRUD --> REST
+  Dash -- Query --> REST
+
+  REST -- Validate --> SHACL
+  REST -- Authz --> Auth
+  REST -- Persist --> DB
+  REST -- Files --> Obj
+  REST -- Linkage --> KG
+
+  HCM -- Ingest (adapters) --> REST
+  Export -- Reads --> DB
+  Export -- Generates --> Obj
+
+  classDef node fill:#111a2b,stroke:#334155,color:#e5e7eb;
+  classDef hot fill:#132a3e,stroke:#60a5fa,color:#e5e7eb;
+  class UI,Dash,REST,Export hot;
+            </pre>
+        </div>
+
+        <div class="section" style="padding-top:18px;">
+            <h3 style="margin-bottom:10px;">Data lifecycle</h3>
+            <div class="timeline">
+                <div class="dot"></div>
+                <div class="step"><h4>1) Define</h4><p>Choose an ontology‑aligned template (study, cohort, procedures). Required fields + controlled vocabularies ensure consistency.</p></div>
+                <div class="dot"></div>
+                <div class="step"><h4>2) Capture</h4><p>Enter metadata; ingest HCM outputs through adapters with unit normalization and provenance tags.</p></div>
+                <div class="dot"></div>
+                <div class="step"><h4>3) Validate</h4><p>Server‑side SHACL validation + client hints catch issues before they pollute datasets.</p></div>
+                <div class="dot"></div>
+                <div class="step"><h4>4) Export</h4><p>Reproducible export recipes to CSV/JSON/JSON‑LD/NWB. Each export is versioned.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="value" class="section">
+        <h2>Business value</h2>
+        <div class="grid">
+            <article class="card"><h3><i class="icon ri-timer-flash-line"></i> Cut time‑to‑insight</h3><p>Reduce study setup and data wrangling by 30–60% with templates and validated entries.</p></article>
+            <article class="card"><h3><i class="icon ri-focus-3-line"></i> De‑risk audits</h3><p>Traceability, access control, and provenance logs make QA reviews boring again.</p></article>
+            <article class="card"><h3><i class="icon ri-plant-line"></i> Align with 3Rs</h3><p>Better metadata → fewer repeated experiments → better welfare and lower costs.</p></article>
+            <article class="card"><h3><i class="icon ri-group-2-line"></i> Multi‑site ready</h3><p>Harmonize across sites; ship the same export recipe to partners and regulators.</p></article>
+        </div>
+
+        <div class="cta-block" style="margin-top:20px;">
+            <div>
+                <h3 style="margin:0 0 6px;">Want this page in your site?</h3>
+                <p style="margin:0;color:var(--muted)">Drop this file as <code class="k">index.html</code> in your <code class="k">/docs</code> folder or root of your GitHub Pages.</p>
+            </div>
+            <div>
+                <a class="btn primary" href="#contact"><i class="ri-download-2-line"></i> Request a branded version</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <h2>FAQ</h2>
+        <details class="card"><summary><strong>Does this require a build step?</strong></summary><p style="color:var(--muted)">No. This page uses vanilla HTML/CSS/JS with CDNs for icons and Mermaid. You can customize styles inline or add a <code class="k">.css</code> file.</p></details>
+        <details class="card"><summary><strong>Can I switch themes?</strong></summary><p style="color:var(--muted)">Tweak the <code class="k">:root</code> color variables to suit MAPP branding (e.g., darker violet or your logo palette).</p></details>
+        <details class="card"><summary><strong>Where do I put my real diagram?</strong></summary><p style="color:var(--muted)">Edit the Mermaid block in the Architecture section. The diagram renders at runtime; no pipeline needed.</p></details>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>For demos, pilots, and partnerships: <a href="mailto:contact@neuronautix.com">contact@neuronautix.com</a> • Add links to LinkedIn, GitHub, or a booking page.</p>
+    </section>
+</div>

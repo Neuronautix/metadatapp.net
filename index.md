@@ -30,7 +30,7 @@ Elevate Your Preclinical Research with Metadatapp (MAPP): Our platform helps you
 <h2 id="what-is-metadatapp">What is Metadatapp?</h2>
 {: .block}
 
-**Metadatapp** is a platform designed to streamline metadata management for preclinical research. Our solution ensures compliance with **FAIR principles**, seamlessly integrates with laboratory tools such as **LIMS**, colony manager and electronic lab notebooks, and enhances reproducibility by meticulously tracking and recording all relevant experimental data.
+**Metadatapp** is a platform designed to streamline metadata management for preclinical research. Our solution ensures compliance with **FAIR principles**, seamlessly integrates with laboratory tools such as **LIMS**, animal/colony manager and electronic lab notebooks (ELN), and enhances reproducibility by meticulously tracking and recording all relevant experimental data.
 
 Our goal is to empower researchers with tools to simplify research workflows, ensure FAIR compliance, and enhance reproducibility in science. Together, we make research more efficient and impactful.
 

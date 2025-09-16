@@ -1,9 +1,9 @@
- # main links
- - title: "Home"
-   url: /
- - title: "About"
-   url: /about/
- - title: "Contact"
-   url: /contact/
- # - title: "Demo"
- #   url: /demo/
+ main:
+  - title: "Home"
+    url: /
+  - title: "MAPP Description"
+    url: /mapp-description.html
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
