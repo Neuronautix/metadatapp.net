@@ -2,6 +2,7 @@
 layout: single
 title: "MAPP Description"
 permalink: /mapp-description/
+mermaid: true
 ---
 
 <div class="container">
@@ -87,17 +88,60 @@ permalink: /mapp-description/
     <section id="architecture" class="section">
         <h2>Architecture at a glance</h2>
         <p>This Mermaid diagram summarizes the backend–frontend structure and data flow. Adapt labels to your exact stack.</p>
+        <div class="mermaid">
+flowchart LR
+subgraph Client["Front-end (React Admin / MUI)"]
+  UI["Smart Forms (validators, date pickers, vocabularies)"];
+  Dash["Dashboards (Projects, Studies, Datasets)"];
+end
+
+subgraph API["Backend (Symfony / API Platform)"]
+  Auth["Keycloak / OIDC"];
+  REST["REST & GraphQL (JSON-LD / Hydra)"];
+  SHACL["Validation (SHACL shapes)"];
+  Export["Export Engine (CSV, JSON, JSON-LD, NWB)"];
+end
+
+subgraph Data["Storage & Services"]
+  DB[(PostgreSQL)];
+  Obj[(Object Storage / S3)];
+  KG["Knowledge Graph (JSON-LD contexts)"];
+end
+
+subgraph HCM["HCM & Instruments"]
+  DVC["DVC / Tecniplast"];
+  LMT["Live Mouse Tracker"];
+  IoT["Other Sensors / iMouse"];
+end
+
+UI --&gt;|CRUD| REST;
+Dash --&gt;|Query| REST;
+
+REST --&gt;|Validate| SHACL;
+REST --&gt;|Authz| Auth;
+REST --&gt;|Persist| DB;
+REST --&gt;|Files| Obj;
+REST --&gt;|Linkage| KG;
+
+HCM --&gt;|Ingest, adapters| REST;
+Export --&gt;|Reads| DB;
+Export --&gt;|Generates| Obj;
+
+classDef node fill:#111a2b,stroke:#334155,color:#e5e7eb;
+classDef hot fill:#132a3e,stroke:#60a5fa,color:#e5e7eb;
+class UI,Dash,REST,Export hot;
+</div>
 
         <div class="section" style="padding-top:18px;">
             <h3 style="margin-bottom:10px;">Data lifecycle</h3>
             <div class="timeline">
-                <div class="dot"></div>
+                <div class="dot"><i class="ri-pencil-line"></i></div>
                 <div class="step"><h4>1) Define</h4><p>Choose an ontology‑aligned template (study, cohort, procedures). Required fields + controlled vocabularies ensure consistency.</p></div>
-                <div class="dot"></div>
+                <div class="dot"><i class="ri-camera-lens-line"></i></div>
                 <div class="step"><h4>2) Capture</h4><p>Enter metadata; ingest HCM outputs through adapters with unit normalization and provenance tags.</p></div>
-                <div class="dot"></div>
+                <div class="dot"><i class="ri-shield-check-line"></i></div>
                 <div class="step"><h4>3) Validate</h4><p>Server‑side SHACL validation + client hints catch issues before they pollute datasets.</p></div>
-                <div class="dot"></div>
+                <div class="dot"><i class="ri-download-2-line"></i></div>
                 <div class="step"><h4>4) Export</h4><p>Reproducible export recipes to CSV/JSON/JSON‑LD/NWB. Each export is versioned.</p></div>
             </div>
         </div>
