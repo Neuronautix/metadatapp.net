@@ -1,7 +1,7 @@
  main:
   - title: "Home"
     url: /
-  - title: "MAPP Description"
+  - title: "MAPP"
     url: /mapp-description/
   - title: "Demo"
     url: /demo/

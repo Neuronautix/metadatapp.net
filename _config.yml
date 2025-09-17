@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "da
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Metadatapp"
+title                    : "MAPP"
 title_separator          : "-"
-subtitle                 : "You're all-in-one Metadata management platform" # site tagline that appears below site title in masthead
+subtitle                 : "Organize. Connect. Empower Preclinical Research." # site tagline that appears below site title in masthead
 name                     : "Metadatapp"
-description              : "A Metadata Management platform for preclinical research"
+description              : "Unlock the Full Potential of Your Preclinical Data with MAPP, the Ultimate Metadata Management Platform"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
