@@ -5,6 +5,10 @@
     url: /mapp-description/
   - title: "Demo"
     url: /demo/
+  - title: "Standards & Compliance"
+    url: /standards/
+  - title: "Security & Governance"
+    url: /security/
   - title: "About"
     url: /about/
   - title: "Contact"

@@ -132,7 +132,7 @@ author:
       url: "https://github.com/neuronautix/"
     # - label: "Instagram"
       # icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+  # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -216,6 +216,9 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+after_footer_scripts:
+  - /assets/js/mapp.js
 
 
 # Outputting

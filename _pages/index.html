@@ -6,12 +6,17 @@ author_profile: true
 
 <div class="container">
     <section class="hero">
-        <div class="glass" style="padding:28px;">
+        <div class="glass">
             <h1>Unlock the Full Potential of Your Preclinical Data</h1>
             <p>MAPP is a next-generation platform that transforms your scattered metadata into a structured, interoperable, and AI-ready asset. Move beyond spreadsheets and unlock faster, more reproducible, and more valuable research.</p>
             <div class="cta">
-                <a class="btn primary" href="#features">Discover MAPP's Features</a>
-                <a class="btn" href="/demo/">Request a Demo</a>
+                <a class="btn btn--mapp-primary" href="#features">Discover MAPP's Features</a>
+                <a class="btn btn--mapp-ghost" href="/demo/">Request a Demo</a>
+            </div>
+            <div class="trust-strip">
+                <span class="pill">Initium Accelerator (UM)</span>
+                <span class="pill">BIC Montpellier</span>
+                <span class="pill">IGF CNRS</span>
             </div>
         </div>
     </section>
@@ -23,14 +28,14 @@ author_profile: true
     </section>
 
     <section id="mapp-is-fair-by-design" class="section">
-        <h2>MAPP is FAIR-by-design!</h2>
+        <h2>FAIR by design</h2>
         <p>MAPP isn’t merely “compatible” with FAIR; it was engineered around these principles:</p>
         <ul>
             <li>API-first + JSON-LD give universal findability and interoperability.</li>
             <li>Open protocols + OIDC ensure controlled but straightforward accessibility.</li>
             <li>Rich domain schema + provenance hooks drive long-term reusability.</li>
         </ul>
-        <p>FAIR compliance is baked into the MAPP architecture (not bolted on afterwards), making your (meta)data FAIR-by-design !</p>
+        <p>FAIR compliance is baked into the MAPP architecture, making your (meta)data FAIR by design.</p>
     </section>
 
     <section id="features" class="section">
@@ -68,7 +73,7 @@ author_profile: true
         <div class="grid">
             <article class="card">
                 <img src="assets/images/dhuzard_profile_2025_small-removebg-preview.png" alt="Damien Huzard" style="width:100px;border-radius:50%;margin-bottom:1em;"/>
-                <h3><strong>Damien Huzard, PhD</strong> - Founder, CEO & CSO</h3>
+                <h3><strong>Damien Huzard</strong> - Founder, CEO & CSO</h3>
                 <p>With 15 years of experience in <strong>preclinical academic research</strong> and specializing in <strong>behavioral neuroscience</strong> and <strong>data analysis</strong>, Damien transitioned to making an impact on science from an external perspective. His involvement in the behavioral community and his interest in creating customized solutions inspired him to create <a href="https://www.neuronautix.com">NeuroNautix</a> to share his behavioral expertise and MetaDatApp to improve metadata management in research. Additionally, he serves as an administrator, moderator and voice of <a href="https://www.thebehaviourforum.org">The Behaviour Forum</a>.</p>
                 <div class="social-links">
                     <a href="https://dhuzard.github.io/" class="btn btn--social"><i class="fas fa-link"></i></a>
@@ -77,16 +82,7 @@ author_profile: true
                      <a href="https://orcid.org/0000-0003-4820-7951" class="btn btn--social"><i class="fa-brands fa-orcid"></i></a> 
                 </div>
             </article>
-            <article class="card">
-                <img src="assets/images/Laurent_Huzard-removebg-preview.png" alt="Laurent Huzard" style="width:100px;border-radius:50%;margin-bottom:1em;"/>
-                <h3><strong>Laurent Huzard</strong> - Open Source Backbone</h3>
-                <p>Laurent is our open‑source contributor specializing in PHP (Symfony & API Platform). He’s the go‑to debugger in our community, meticulously reviewing pull requests, hardening code architecture and crafting reusable modules. His structured, framework‑driven approach keeps our projects solid, performant and scalable—driving adoption and helping fellow developers build with confidence.</p>
-                <div class="social-links">
-                    <a href="#" class="btn btn--social"><i class="fas fa-link"></i></a>
-                    <a href="https://github.com/LaurentHuzard" class="btn btn--social"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/laurent-huzard-84569939/" class=""><i class="fab fa-linkedin"></i></a>
-                </div>
-            </article>
+            
             <article class="card">
                 <img src="assets/images/rakesh.png" alt="Rakesh Beedasy" style="width:100px;border-radius:50%;margin-bottom:1em;"/>
                 <h3><strong>Rakesh Beedasy</strong> - CTO</h3>
@@ -97,6 +93,18 @@ author_profile: true
                     <a href="https://www.linkedin.com/in/sharmabeedasy/" class="btn btn--social"><i class="fab fa-linkedin"></i></a>
                 </div>
             </article>
+            
+            <article class="card">
+                <img src="assets/images/Laurent_Huzard-removebg-preview.png" alt="Laurent Huzard" style="width:100px;border-radius:50%;margin-bottom:1em;"/>
+                <h3><strong>Laurent Huzard</strong> - Open Source Backbone</h3>
+                <p>Laurent is our open‑source contributor specializing in PHP (Symfony & API Platform). He’s the go‑to debugger in our community, meticulously reviewing pull requests, hardening code architecture and crafting reusable modules. His structured, framework‑driven approach keeps our projects solid, performant and scalable—driving adoption and helping fellow developers build with confidence.</p>
+                <div class="social-links">
+                    <a href="#" class="btn btn--social"><i class="fas fa-link"></i></a>
+                    <a href="https://github.com/LaurentHuzard" class="btn btn--social"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/laurent-huzard-84569939/" class=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            </article>
+            
         </div>
     </section>
 
@@ -128,8 +136,8 @@ author_profile: true
         </div>
     </section>
 
-    <section id="academic-partners" class="section">
-        <h2>Academic Partners</h2>
+    <section id="academic-collab" class="section">
+        <h2>Academic Collaborations</h2>
         <div class="grid">
             <article class="card">
                 <h3>Dr. Konstantin Todorov, LIRMM, Montpellier</h3>
@@ -166,39 +174,70 @@ author_profile: true
 
     <section id="partners" class="section">
         <h2>Our Partners</h2>
+        <p style="color:var(--muted);max-width:62ch">These are the first people and organizations helping shape MAPP — advising on real needs, sharing domain expertise, collaborating on pilots, and supporting development. They are not necessarily commercial partners; they are our early community.</p>
         <div class="grid">
             <article class="card">
-                <h3>Benoit Petit-Demoulières (Fair3R)</h3>
+                <h3>Benoit Petit-Demoulières (Fair3R.fr)</h3>
+                <p>Early feedback on animal metadata and 3Rs alignment.</p>
+                <div class="link-actions">
+                    <a class="btn btn--mapp-ghost" href="https://fair3r.fr" target="_blank" rel="noopener">Website</a>
+                </div>
+            </article>
+            <article class="card">
+                <h3>IMPC, Strasbourg</h3>
+                <p>Perspectives on cross‑lab comparability and ontology mapping.</p>
             </article>
             <article class="card">
                 <h3>Hamid Meziane (Fair3R)</h3>
+                <p>Collaboration on study design traceability and welfare metrics.</p>
+                <div class="link-actions">
+                    <a class="btn btn--mapp-ghost" href="https://fair3r.fr" target="_blank" rel="noopener">Fair3R</a>
+                </div>
             </article>
             <article class="card">
                 <h3>Kelly Rodriques (Iseehear Inc., softmouse.NET)</h3>
+                <p>Colony management perspectives and integration scenarios.</p>
+                <div class="link-actions">
+                    <a class="btn btn--mapp-ghost" href="https://softmouse.net" target="_blank" rel="noopener">softmouse.net</a>
+                </div>
             </article>
             <article class="card">
                 <h3>Nicola Carpi (Deltablot, ElabFTW)</h3>
+                <p>ELN interoperability and export pathways for reproducibility.</p>
+                <div class="link-actions">
+                    <a class="btn btn--mapp-ghost" href="https://www.elabftw.net/" target="_blank" rel="noopener">eLabFTW</a>
+                </div>
             </article>
             <article class="card">
                 <h3>Elodie Belan (CNRS IGF, Montpellier)</h3>
+                <p>Use‑case discussions around preclinical workflows and datasets.</p>
             </article>
             <article class="card">
                 <h3>Michael Florea & Noah Weber (Olden Labs)</h3>
+                <p>Feedback on developer ergonomics and data pipelines.</p>
             </article>
             <article class="card">
                 <h3>Athanassia Sotiropoulou (GIS FC3R)</h3>
+                <p>Alignment with French 3Rs initiatives and best practices.</p>
             </article>
             <article class="card">
                 <h3>Julia Menon (preclinicaltrials.eu)</h3>
+                <p>Trial registration and metadata discoverability for publications.</p>
+                <div class="link-actions">
+                    <a class="btn btn--mapp-ghost" href="https://preclinicaltrials.eu" target="_blank" rel="noopener">Website</a>
+                </div>
             </article>
             <article class="card">
                 <h3>Esther Pearl (NC3R)</h3>
+                <p>Ethical and methodological rigor for animal research.</p>
             </article>
             <article class="card">
                 <h3>Giorgio Rosatti and Stefano Gaburro (Tecniplast)</h3>
+                <p>HCM data perspectives and device integration considerations.</p>
             </article>
             <article class="card">
                 <h3>Marta Acilu (Anibio)</h3>
+                <p>Early‑stage user feedback on capture forms and exports.</p>
             </article>
         </div>
     </section>
@@ -216,7 +255,7 @@ author_profile: true
         <p><strong>Have questions or want a demo?</strong> Get in touch today!</p>
         <div class="cta-block" style="margin-top:20px;">
             <div>
-                <a class="btn primary" href="mailto:contact@metadatapp.net"><i class="ri-mail-line"></i> Email Us Now</a>
+                <a class="btn btn--mapp-primary" href="mailto:contact@metadatapp.net"><i class="ri-mail-line" aria-hidden="true"></i> Email Us Now</a>
             </div>
         </div>
     </section>

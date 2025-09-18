@@ -7,7 +7,7 @@ mermaid: true
 
 <div class="container">
     <section class="hero">
-        <div class="glass" style="padding:28px;">
+        <div class="glass">
             <h1>A next-generation platform for reliable and efficient preclinical research</h1>
             <p>At its core, MAPP solves one of the biggest bottlenecks in preclinical R&D: scattered, inconsistent, and poorly reusable metadata. Instead of data being locked in notebooks, spreadsheets, or proprietary silos, MAPP provides a unified, API-first environment where all experimental metadata—from animal models and procedures to devices, behaviors, and outcomes—are captured in a structured, standardized, and interoperable way.</p>
             <div class="badges">
@@ -17,8 +17,8 @@ mermaid: true
                 <div class="badge"><i class="ri-git-branch-line"></i> Git‑ops friendly</div>
             </div>
             <div class="cta">
-                <a class="btn primary" href="#features"><i class="ri-sparkling-2-line"></i> Explore features</a>
-                <a class="btn" href="#architecture"><i class="ri-node-tree"></i> See the architecture</a>
+                <a class="btn btn--mapp-primary" href="#features"><i class="ri-sparkling-2-line" aria-hidden="true"></i> Explore features</a>
+                <a class="btn btn--mapp-ghost" href="#architecture"><i class="ri-node-tree" aria-hidden="true"></i> See the architecture</a>
             </div>
         </div>
     </section>
@@ -55,27 +55,27 @@ mermaid: true
 
     <section class="section">
         <h2>Who benefits?</h2>
-        <div class="tabs" id="audience-tabs">
-            <div class="tab active" data-tab="platform">Platform</div>
-            <div class="tab" data-tab="labs">For Labs</div>
-            <div class="tab" data-tab="cros">For CROs</div>
+        <div class="tabs" id="audience-tabs" role="tablist">
+            <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-platform" id="tab-platform" data-tab="platform">Platform</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="panel-labs" id="tab-labs" data-tab="labs">For Labs</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="panel-cros" id="tab-cros" data-tab="cros">For CROs</button>
         </div>
         <div class="tab-panels">
-            <div id="panel-platform" class="active">
+            <div id="panel-platform" class="active" role="tabpanel" aria-labelledby="tab-platform">
                 <div class="grid">
                     <article class="card"><h3><i class="icon ri-link"></i> Interoperable</h3><p>JSON‑LD contexts make your data linkable across systems and knowledge graphs.</p></article>
                     <article class="card"><h3><i class="icon ri-shield-check-line"></i> Governed</h3><p>RBAC, audit logs, and dataset licensing to control who sees what and when.</p></article>
                     <article class="card"><h3><i class="icon ri-external-link-line"></i> Exports</h3><p>One‑click export presets to CSV, JSON, JSON‑LD, and NWB with unit handling.</p></article>
                 </div>
             </div>
-            <div id="panel-labs">
+            <div id="panel-labs" role="tabpanel" aria-labelledby="tab-labs">
                 <div class="grid">
                     <article class="card"><h3><i class="icon ri-flask-line"></i> Faster studies</h3><p>Templates for common protocols; reduce paperwork, reduce errors.</p></article>
                     <article class="card"><h3><i class="icon ri-group-line"></i> Collaboration</h3><p>Share structured datasets with collaborators without emailing spreadsheets.</p></article>
                     <article class="card"><h3><i class="icon ri-emotion-happy-line"></i> Animal welfare</h3><p>Traceability of housing, procedures, and endpoints supports 3Rs compliance.</p></article>
                 </div>
             </div>
-            <div id="panel-cros">
+            <div id="panel-cros" role="tabpanel" aria-labelledby="tab-cros">
                 <div class="grid">
                     <article class="card"><h3><i class="icon ri-hand-coin-line"></i> Operational efficiency</h3><p>Standardized intake + outputs; fewer bespoke pipelines per client.</p></article>
                     <article class="card"><h3><i class="icon ri-stack-line"></i> Productized data</h3><p>Offer reproducible data packages with provenance; accelerate client decisions.</p></article>
@@ -87,8 +87,45 @@ mermaid: true
 
     <section id="architecture" class="section">
         <h2>Architecture at a glance</h2>
-        <p>This Mermaid diagram summarizes the backend–frontend structure and data flow. Adapt labels to your exact stack.</p>
-        <div class="mermaid">
+        <p>A pragmatic three‑layer model: UI for data capture and review, API for validation and governance, and storage/services for persistence and exports.</p>
+        <div class="architecture-grid">
+          <div class="arch-card">
+            <h3>Frontend (React Admin)</h3>
+            <ul>
+              <li>Smart forms, validators, vocabularies</li>
+              <li>Projects/Studies/Datasets dashboards</li>
+              <li>CSV/JSON export triggers</li>
+            </ul>
+          </div>
+          <div class="arch-card">
+            <h3>API (Symfony / API Platform)</h3>
+            <ul>
+              <li>JSON‑LD/GraphQL endpoints</li>
+              <li>OIDC auth, RBAC, audit</li>
+              <li>SHACL/schema validation</li>
+            </ul>
+          </div>
+          <div class="arch-card">
+            <h3>Storage & Services</h3>
+            <ul>
+              <li>PostgreSQL for metadata</li>
+              <li>Object storage for files</li>
+              <li>Exports: CSV, JSON, JSON‑LD, NWB</li>
+            </ul>
+          </div>
+          <div class="arch-card">
+            <h3>Integrations</h3>
+            <ul>
+              <li>HCM & instruments (DVC, LMT, etc.)</li>
+              <li>Adapters normalize units and formats</li>
+              <li>Knowledge graph contexts</li>
+            </ul>
+          </div>
+        </div>
+
+        <details class="card" style="margin-top:14px;">
+          <summary><strong>Show technical diagram (Mermaid)</strong></summary>
+          <div class="mermaid" style="margin-top:10px;">
 flowchart LR
 subgraph Client["Front-end (React Admin / MUI)"]
   UI["Smart Forms (validators, date pickers, vocabularies)"];
@@ -130,7 +167,8 @@ Export --&gt;|Generates| Obj;
 classDef node fill:#111a2b,stroke:#334155,color:#e5e7eb;
 classDef hot fill:#132a3e,stroke:#60a5fa,color:#e5e7eb;
 class UI,Dash,REST,Export hot;
-</div>
+          </div>
+        </details>
 
         <div class="section" style="padding-top:18px;">
             <h3 style="margin-bottom:10px;">Data lifecycle</h3>
@@ -158,11 +196,11 @@ class UI,Dash,REST,Export hot;
 
         <div class="cta-block" style="margin-top:20px;">
             <div>
-                <h3 style="margin:0 0 6px;">Want this page in your site?</h3>
-                <p style="margin:0;color:var(--muted)">Drop this file as <code class="k">index.html</code> in your <code class="k">/docs</code> folder or root of your GitHub Pages.</p>
+                <h3 style="margin:0 0 6px;">Want to test MAPP ?</h3>
+                <p style="margin:0;color:var(--muted)">Drop us an <code class="k">email</code> specifying your <code>role</code> and <code>reason</code>.</p>
             </div>
             <div>
-                <a class="btn primary" href="#contact"><i class="ri-download-2-line"></i> Request a branded version</a>
+                <a class="btn primary" href="#presignup"><i class="ri-download-2-line"></i> presign Here</a>
             </div>
         </div>
     </section>
