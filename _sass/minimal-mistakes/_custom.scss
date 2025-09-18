@@ -80,7 +80,19 @@ header.nav{
 .architecture-grid{ display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top:8px; }
 .arch-card{ padding:14px; border-radius: var(--radius); border:1px solid rgba(0,0,0,.10); background: #fff; }
 .arch-card h3{ margin:0 0 6px; font-size:1rem; }
+.arch-card h3 i{ margin-right:6px; color: var(--brand); }
 .arch-card ul{ margin:0; padding-left:18px; color:var(--muted); }
+
+/* Compact logo strip under hero */
+.trust-logos{ display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-top:12px; }
+.trust-logos img{ height:28px; width:auto; opacity:.9; filter: grayscale(25%); }
+
+/* Partner logo grid */
+.logo-grid{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.logo-card{ text-align:center; padding:14px; border-radius: var(--radius); border:1px solid rgba(0,0,0,.08); background:#fff; }
+.logo-card img{ max-height:56px; width:auto; margin:0 auto 10px; display:block; }
+.logo-card h3{ margin:0 0 6px; font-size:1rem; }
+.logo-card p{ margin:0 0 8px; color:var(--muted); }
 
 /* Tabs */
 .tabs{ display:flex; gap:8px; margin:10px 0 14px; flex-wrap:wrap; }
