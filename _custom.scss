@@ -8,12 +8,12 @@
  * throughout your stylesheets.
 */
 :root {
-  --mapp-primary-color: #007bff; /* A nice, professional blue */
+  --mapp-primary-color: #5A7D9A; /* dusty steel blue */
   --mapp-primary-text-color: #ffffff;
-  --mapp-accent-color: #ff007f;  /* A vibrant pink/magenta for accents */
+  --mapp-accent-color: #2E3B4E;  /* deep slate */
   --mapp-accent-text-color: #ffffff;
-  --mapp-dark-color: #1a1a1a;
-  --mapp-light-color: #f8f9fa;
+  --mapp-dark-color: #2E3B4E;
+  --mapp-light-color: #F0F4F8;
 }
 
 /*
@@ -23,17 +23,16 @@
  * You can add more styles here as your site grows.
 */
 
-/* Default button style for neon theme */
 .btn {
-  background-color: #222; /* A dark grey, less stark than pure black */
-  color: #eee;
-  border: 1px solid #444;
+  background-color: var(--mapp-primary-color);
+  color: var(--mapp-primary-text-color);
+  border: 1px solid darken(var(--mapp-primary-color), 10%);
   border-radius: 5px;
 
   &:hover {
-    background-color: #333;
-    border-color: #666;
-    color: #fff;
+    background-color: darken(var(--mapp-primary-color), 10%);
+    border-color: darken(var(--mapp-primary-color), 20%);
+    color: var(--mapp-primary-text-color);
   }
 }
 
@@ -64,13 +63,13 @@
   font-size: 1.2em;
   border-radius: 50%;
   margin: 0 5px;
-  color: #fff;
-  background-color: #333;
-  border: 1px solid #444;
+  color: var(--mapp-accent-text-color);
+  background-color: var(--mapp-accent-color);
+  border: 1px solid darken(var(--mapp-accent-color), 10%);
 
   &:hover {
-    background-color: #444;
-    border-color: #666;
-    color: #fff;
+    background-color: darken(var(--mapp-accent-color), 10%);
+    border-color: darken(var(--mapp-accent-color), 20%);
+    color: var(--mapp-accent-text-color);
   }
 }
