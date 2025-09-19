@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calendar">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5A7D9A"/>
+      <stop offset="100%" stop-color="#2E3B4E"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="36" width="216" height="200" rx="16" ry="16" fill="#F5F8FB" stroke="#2E3B4E" stroke-width="4"/>
+  <rect x="20" y="36" width="216" height="56" rx="16" ry="16" fill="url(#g)"/>
+  <circle cx="68" cy="36" r="10" fill="#F5F8FB"/>
+  <circle cx="188" cy="36" r="10" fill="#F5F8FB"/>
+  <g fill="#2E3B4E">
+    <rect x="48" y="116" width="24" height="24" rx="4"/>
+    <rect x="88" y="116" width="24" height="24" rx="4"/>
+    <rect x="128" y="116" width="24" height="24" rx="4"/>
+    <rect x="168" y="116" width="24" height="24" rx="4"/>
+    <rect x="48" y="156" width="24" height="24" rx="4"/>
+    <rect x="88" y="156" width="24" height="24" rx="4"/>
+    <rect x="128" y="156" width="24" height="24" rx="4"/>
+    <rect x="168" y="156" width="24" height="24" rx="4"/>
+    <rect x="48" y="196" width="24" height="24" rx="4"/>
+    <rect x="88" y="196" width="24" height="24" rx="4"/>
+    <rect x="128" y="196" width="24" height="24" rx="4"/>
+    <rect x="168" y="196" width="24" height="24" rx="4"/>
+  </g>
+</svg>
+

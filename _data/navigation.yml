@@ -1,17 +1,9 @@
  main:
   - title: "Home"
     url: /
-  - title: "MAPP"
-    url: /mapp-description/
+  - title: "About MAPP"
+    url: /about/
   - title: "Demo"
     url: /demo/
-  - title: "Book a Call"
-    url: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ21V13yqbecGws7t9tjkScNOi2zUW07JGpk7TvwV8Avbjdz3663yJCZXoB4Dtcc69CoJzhgSM9T?gv=true
-  - title: "Standards & Compliance"
-    url: /standards/
-  - title: "Security & Governance"
-    url: /security/
-  - title: "About"
-    url: /about/
   - title: "Contact"
     url: /contact/
