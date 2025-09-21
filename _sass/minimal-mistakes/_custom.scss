@@ -62,7 +62,12 @@ header.nav{
 .section h2{ font-size: clamp(1.3rem, 2.4vw, 1.75rem); margin-bottom:14px; }
 
 .grid{ display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-.card{ padding:14px; border-radius: var(--radius); border:1px solid rgba(0,0,0,.10); background: radial-gradient(1200px 400px at 0% 0%, rgba(0,123,255,.08), rgba(0,0,0,.02)); }
+.card{ padding:14px; border-radius: var(--radius); border:1px solid rgba(0,0,0,.10); background: radial-gradient(1200px 400px at 0% 0%, rgba(0,123,255,.08), rgba(0,0,0,.02)); transition: background .25s ease, border-color .25s ease, transform .12s ease, box-shadow .2s ease; }
+.grid .card{ --hover-tint: rgba(90,125,154,.14); }
+.grid .card:nth-child(3n+1){ --hover-tint: rgba(90,125,154,.18); }
+.grid .card:nth-child(3n+2){ --hover-tint: rgba(46,59,78,.16); }
+.grid .card:nth-child(3n+3){ --hover-tint: rgba(34,160,107,.16); }
+.card:hover{ background: radial-gradient(1200px 400px at 0% 0%, var(--hover-tint), rgba(0,0,0,.02)); border-color: rgba(0,0,0,.18); transform: translateY(-2px); box-shadow: var(--shadow); }
 .card img{ display:block; margin:0 auto 1em; }
 .card h3{ font-size:1.05rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
 .card p{ color:var(--muted); font-size:.96rem; }
