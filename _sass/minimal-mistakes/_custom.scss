@@ -7,6 +7,8 @@
     --text:#0f172a;       /* slate-900 */
     --brand:#5A7D9A;      /* MAPP primary (dusty steel blue) */
     --brand-2:#2E3B4E;    /* MAPP accent (deep slate) */
+    --brand-light:#8FA5B8; /* lighter primary */
+    --brand-2-light:#5A6C84; /* lighter accent */
     --accent:#2E3B4E;     /* align accents to brand-2 */
     --ok:#22a06b;         /* green */
     --warn:#f59e0b;       /* amber */
@@ -35,12 +37,29 @@ header.nav{
 .btn.primary{ background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#ffffff; border:0; font-weight:700; }
 
 /* MAPP button variants */
-.btn--mapp-primary{ background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#fff; border:0; font-weight:700; }
+.btn--mapp-primary{ background: linear-gradient(135deg, var(--brand-light), var(--brand-2-light)); color:#fff; border:0; font-weight:700; }
 .btn--mapp-primary:hover{ filter: brightness(1.05); transform: translateY(-1px); }
-.btn--mapp-ghost{ background: transparent; color: var(--brand-2); border:1px solid rgba(2,6,23,.18); }
-.btn--mapp-ghost:hover{ background: rgba(46,59,78,.06); border-color: rgba(2,6,23,.3); }
-.btn--mapp-secondary{ background: var(--brand-2); color:#fff; border:0; font-weight:600; }
+.btn--mapp-ghost{ background: transparent; color: var(--brand-2); border:1px solid rgba(2,6,23,.16); }
+.btn--mapp-ghost:hover{ background: rgba(90,125,154,.08); border-color: rgba(2,6,23,.24); }
+.btn--mapp-secondary{ background: var(--brand-2-light); color:#fff; border:0; font-weight:600; }
 .btn--mapp-secondary:hover{ filter:brightness(1.05); }
+/* Accent button (used on About page) */
+.btn--mapp-accent{ background: var(--brand-2); color:#fff; border:0; font-weight:700; }
+.btn--mapp-accent:hover{ filter: brightness(1.05); transform: translateY(-1px); }
+
+/* Ensure readable white text on filled buttons in all states */
+.btn--mapp-primary,
+.btn--mapp-primary:visited,
+.btn--mapp-primary:hover,
+.btn--mapp-primary:active,
+.btn--mapp-secondary,
+.btn--mapp-secondary:visited,
+.btn--mapp-secondary:hover,
+.btn--mapp-secondary:active,
+.btn--mapp-accent,
+.btn--mapp-accent:visited,
+.btn--mapp-accent:hover,
+.btn--mapp-accent:active { color:#fff; }
 
 /* HERO */
 .hero{ padding:56px 0 24px; position:relative; overflow:hidden; }
@@ -68,6 +87,15 @@ header.nav{
 .grid .card:nth-child(3n+2){ --hover-tint: rgba(46,59,78,.16); }
 .grid .card:nth-child(3n+3){ --hover-tint: rgba(34,160,107,.16); }
 .card:hover{ background: radial-gradient(1200px 400px at 0% 0%, var(--hover-tint), rgba(0,0,0,.02)); border-color: rgba(0,0,0,.18); transform: translateY(-2px); box-shadow: var(--shadow); }
+
+/* Core features: stable per-card hover tints */
+#features .grid .card{ --hover-tint: rgba(244,194,194,.22); } /* default: muted pink */
+#features .grid .card:nth-child(1){ --hover-tint: rgba(244,194,194,.22); } /* muted pink */
+#features .grid .card:nth-child(2){ --hover-tint: rgba(243,225,158,.22); } /* muted yellow */
+#features .grid .card:nth-child(3){ --hover-tint: rgba(201,181,231,.22); } /* muted purple */
+#features .grid .card:nth-child(4){ --hover-tint: rgba(180,220,215,.22); } /* muted teal */
+#features .grid .card:nth-child(5){ --hover-tint: rgba(173,199,230,.22); } /* muted blue */
+#features .grid .card:nth-child(6){ --hover-tint: rgba(250,200,160,.22); } /* muted orange */
 .card img{ display:block; margin:0 auto 1em; }
 .card h3{ font-size:1.05rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
 .card p{ color:var(--muted); font-size:.96rem; }
