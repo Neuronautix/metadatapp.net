@@ -147,49 +147,130 @@ details summary{ cursor:pointer; }
 .diagram{ padding:18px; border-radius: var(--radius); background:#f8f9fa; border:1px solid rgba(0,0,0,.12); overflow:auto; }
 
 /* Timeline */
-.timeline {
+/* Generic timeline (not used by new section) was conflicting with .dot/.step.
+   Introduce a scoped MAPP timeline to avoid collisions. */
+.mapp-timeline {
+  --rail-x: 18px;
   display: grid;
-  grid-template-columns: 28px 1fr;
+  grid-template-columns: 36px 1fr;
   gap: 14px;
   position: relative;
-  margin: 2em 0;
+  margin: 1.5em 0 0.5em;
 }
 
-.timeline::before {
+.mapp-timeline::before {
   content: '';
   position: absolute;
-  left: 14px;
-  top: 14px;
-  bottom: 14px;
+  left: var(--rail-x);
+  top: 8px;
+  bottom: 8px;
   width: 2px;
-  background: #e0e0e0;
+  background: rgba(2,6,23,.12);
   transform: translateX(-50%);
 }
 
-.timeline .dot {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #fff;
-  border: 2px solid #e0e0e0;
-  z-index: 1;
+.mapp-timeline__row {
+  display: contents; /* let rail/dot align alongside the item */
+}
+
+.mapp-timeline__rail {
+  position: relative;
+  height: 100%;
+}
+
+.mapp-timeline__dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: var(--brand);
+  box-shadow: 0 0 0 3px rgba(90,125,154,.25);
+  position: relative;
+  left: calc(var(--rail-x) - 7px);
+}
+
+.mapp-timeline__item {
+  background: #0b0b0b; /* black card */
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  position: relative;
+  color: #e5e7eb; /* light grey text for contrast */
+  transition: opacity .6s ease, transform .6s ease, box-shadow .2s ease, border-color .2s ease, background .25s ease;
+}
+
+.mapp-timeline__item::before {
+  content: '';
+  position: absolute;
+  left: -14px; /* bridge the gap from rail to card */
+  top: 24px;
+  width: 14px;
+  height: 2px;
+  background: rgba(2,6,23,.12);
+}
+
+.mapp-timeline__item:hover {
+  border-color: rgba(244,194,194,.35); /* muted pink border */
+  background:
+    linear-gradient(0deg, rgba(244,194,194,.12), rgba(244,194,194,.12)),
+    #0b0b0b; /* subtle muted pink hover tint */
+}
+
+.mapp-timeline__item h3 {
   display: flex;
   align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.mapp-timeline__item .step-index {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--brand-light), var(--brand-2-light));
+  color: #fff;
+  font-weight: 700;
+  font-size: .9rem;
 }
 
-.timeline .step {
-  padding-bottom: 2em;
+.mapp-timeline__item img {
+  width: 100%;
+  max-width: 72%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: #111;
+  object-fit: contain;
+  margin: 6px auto 0;
 }
 
-.timeline .step:last-of-type {
-  padding-bottom: 0;
+.mapp-timeline__item a { display: block; }
+
+/* Prepare + reveal only when JS is enabled */
+html.js .mapp-timeline__item { opacity: 0; transform: translateY(8px); }
+html.js .mapp-timeline__item.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.dot{ width:12px; height:12px; border-radius:999px; background: var(--brand); margin-top:6px; box-shadow:0 0 0 3px rgba(0,123,255,.25); }
-.step{ padding-bottom:10px; }
-.step h4{ margin:0 0 6px; }
-.step p{ color:var(--muted); margin:0; }
+/* Bottom chevron to hint next step */
+.mapp-timeline__item:not(:last-child)::after {
+  content: "\25BE"; /* small down-pointing triangle */
+  position: absolute;
+  bottom: -10px;
+  left: 12px;
+  color: var(--brand-2-light);
+  font-size: 18px;
+  line-height: 1;
+  opacity: .7;
+}
 
 /* CTA block */
 .cta-block{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px; border-radius:var(--radius-lg); background: linear-gradient(135deg, rgba(0,123,255,.12), rgba(111,66,193,.10)); border:1px solid rgba(0,0,0,.14); }
