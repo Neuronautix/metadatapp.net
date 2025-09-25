@@ -28,6 +28,9 @@
 {%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url | escape -%}
 {%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url | escape -%}
 {%- assign site_og_image = site.og_image | absolute_url | escape -%}
+{%- assign social_image = page_large_image | default: page_teaser_image | default: site_og_image -%}
+{%- assign social_image_alt = page.header.og_image_alt | default: page.header.image_alt | default: site.og_image_alt | default: site.title -%}
+{%- assign social_image_alt = social_image_alt | markdownify | strip_html | strip_newlines | escape_once -%}
 
 {%- if page.date -%}
   {%- assign og_type = "article" -%}
@@ -55,10 +58,10 @@
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
-{% if page_large_image %}
-  <meta property="og:image" content="{{ page_large_image }}">
-{% elsif page_teaser_image %}
-  <meta property="og:image" content="{{ page_teaser_image }}">
+{% if social_image %}
+  <meta property="og:image" content="{{ social_image }}">
+  <meta property="og:image:secure_url" content="{{ social_image }}">
+  <meta property="og:image:alt" content="{{ social_image_alt }}">
 {% endif %}
 
 {% if site.twitter.username %}
@@ -79,6 +82,9 @@
 
   {% if author_twitter %}
     <meta name="twitter:creator" content="@{{ author_twitter }}">
+  {% endif %}
+  {% if social_image and social_image_alt %}
+    <meta name="twitter:image:alt" content="{{ social_image_alt }}">
   {% endif %}
 {% endif %}
 
