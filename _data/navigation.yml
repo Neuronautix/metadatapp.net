@@ -1,9 +1,0 @@
- main:
-  - title: "Home"
-    url: /
-  - title: "About MAPP"
-    url: /about/
-  - title: "Demo"
-    url: /demo/
-  - title: "Contact"
-    url: /contact/
