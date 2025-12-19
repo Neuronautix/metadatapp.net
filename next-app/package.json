@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export -o ../docs",
+    "export": "node scripts/export-docs.js",
     "start": "next start",
     "lint": "next lint"
   },
